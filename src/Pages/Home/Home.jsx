@@ -4,12 +4,13 @@ import Banner from "../../components/Header/Banner/Banner";
 
 const Home = () => {
 
-    const donationData = useLoaderData();
+    const Data = useLoaderData();
+    const donationData = Data.campaigns;
 
     return (
         <div>
             <Banner></Banner>
-            <Cards donationData={donationData.campaigns}></Cards>
+            <Cards donationData={donationData}></Cards>
         </div>
     );
 };
