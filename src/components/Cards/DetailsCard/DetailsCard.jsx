@@ -28,7 +28,7 @@ const DetailsCard = ({ donationDetail }) => {
       }
 
       else {
-        swal("Thank You Once Again! You Have already Donated!");
+        swal("Already Donated!", "Thank You Once Again!", "error");
       }
 
     }
