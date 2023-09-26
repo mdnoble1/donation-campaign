@@ -27,11 +27,11 @@ const Donation = () => {
     // console.log(donated)
 
     return (
-        <div className="lg:mt-28">
+        <div className="my-8 md:my-14 lg:my-28">
             { noDataFound ? <p className="h-[80vh] flex justify-center items-center text-xl lg:text-4xl font-semibold">{noDataFound}</p> : 
             <div>
 
-                <div className="grid grid-cols-2 gap-10 container mx-auto">
+                <div className="grid lg:grid-cols-2 gap-10 container mx-auto">
                     {
                        donated.map(donatedItem => <DonationDone key={donatedItem.id} donatedItem={donatedItem}></DonationDone>) 
                     }
