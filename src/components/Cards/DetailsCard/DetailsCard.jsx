@@ -1,4 +1,7 @@
 /* eslint-disable no-unused-vars */
+
+import swal from "sweetalert";
+
 /* eslint-disable react/prop-types */
 const DetailsCard = ({ donationDetail }) => {
   const { id, detail_image, title, description, text_color, price } =
@@ -12,7 +15,7 @@ const DetailsCard = ({ donationDetail }) => {
     if (!donatedItems) {
       addedDonatedArr.push(donationDetail);
       localStorage.setItem("donated", JSON.stringify(addedDonatedArr));
-      alert("products added");
+      swal("Congratulations!", "Thank You For Your Donation!", "success");
     } else {
       const isExist = donatedItems.find(
         (donationDetail) => donationDetail.id == id
@@ -21,11 +24,11 @@ const DetailsCard = ({ donationDetail }) => {
       if (!isExist) {
         addedDonatedArr.push(...donatedItems, donationDetail);
         localStorage.setItem("donated", JSON.stringify(addedDonatedArr));
-        alert("products added");
+        swal("Congratulations!", "Thank You For Your Donation!", "success");
       }
 
       else {
-        alert("already ache")
+        swal("Thank You Once Again! You Have already Donated!");
       }
 
     }
