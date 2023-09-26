@@ -48,15 +48,16 @@ const Donation = () => {
                   ))}
           </div>
 
-          {donated.length > 4 && 
-          <div className="flex justify-center mt-6 lg:mt-10">
-          <button
-            onClick={() => setIsShowAll(!isShowAll)}
-            className="bg-green-600 px-3 lg:px-6 py-2 lg:py-4 rounded-lg hover:bg-green-400 font-semibold md:text-lg lg:text-xl text-white mt-2"
-          >
-            {isShowAll ? "See Less " : "See All"}
-          </button>
-        </div>}
+          {donated.length > 4 && (
+            <div className="flex justify-center mt-6 lg:mt-10">
+              <button
+                onClick={() => setIsShowAll(!isShowAll)}
+                className="bg-green-600 px-3 lg:px-6 py-2 lg:py-4 rounded-lg hover:bg-green-400 font-semibold md:text-lg lg:text-xl text-white mt-2"
+              >
+                {isShowAll ? "See Less " : "See All"}
+              </button>
+            </div>
+          )}
         </div>
       )}
     </div>
