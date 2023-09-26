@@ -24,7 +24,7 @@ const DonationDetails = () => {
     
 
     return (
-        <div className="my-28 container mx-auto">
+        <div className="my-12 lg:my-28 container mx-auto">
             <DetailsCard donationDetail={donationDetail}></DetailsCard>
         </div>
     );
