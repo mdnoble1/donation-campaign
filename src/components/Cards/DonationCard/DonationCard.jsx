@@ -12,18 +12,18 @@ const DonationCard = ({ donation }) => {
     <div>
       <Link to={`/donationDetails/${id}`}>
         <div
-          className={`bg-blue-100 drop-shadow-xl rounded-xl w-[312px] pb-4 mx-auto`}
+          className={`drop-shadow-xl rounded-xl w-[312px] pb-4 mx-auto`}
+          style = {{background:card_bg}}
         >
           <figure>
             <img src={image} alt="" />
           </figure>
           <div className="mt-4 ml-4">
             <h2
-              className={`bg-blue-300 py-1 px-4 text-blue-800 font-semibold w-fit rounded-lg`}
-            >
-              {category}
+              className={`py-1 px-4 font-semibold w-fit rounded-lg`} style = {{background:category_bg , color:text_color}}
+            >{category}
             </h2>
-            <h2 className={`mt-4 font-semibold text-xl text-blue-800`}>
+            <h2 className={`mt-4 font-semibold text-xl`} style = {{color:text_color}}>
               {title}
             </h2>
           </div>
