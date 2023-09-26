@@ -27,7 +27,7 @@ const DonationDone = ({ donatedItem }) => {
               {title}
             </h2>
             <h3 className="text-blue-800 text-sm md:text-base lg:text-base font-semibold mt-2">${price}</h3>
-            <button className="bg-blue-800 px-3 lg:px-6 py-2 lg:py-4 rounded-lg hover:bg-blue-400 font-semibold text-sm md:text-baselg:text-base text-white mt-2">
+            <button className="bg-blue-800 px-3 lg:px-6 py-2 lg:py-4 rounded-lg hover:bg-blue-400 font-semibold text-sm md:text-base lg:text-base text-white mt-2">
               View Details
             </button>
           </div>
