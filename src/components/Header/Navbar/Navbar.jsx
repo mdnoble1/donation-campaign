@@ -4,7 +4,7 @@ import Logo from "./Logo/Logo";
 
 const Navbar = () => {
   return (
-    <nav className="mt-4 md:mt-6 lg:mt-12">
+    <nav className="my-4 md:my-6 lg:my-12">
       <div className="flex justify-between items-center container mx-auto px-6">
         <div className="dropdown lg:hidden">
           <label tabIndex={0} className="text-2xl">
