@@ -46,7 +46,7 @@ const DetailsCard = ({ donationDetail }) => {
           <div className="bg-black w-11/12 lg:w-full h-[80px] md:h-[110px] lg:h-[160px] rounded-b-lg absolute bottom-[1px] opacity-60 left-[17px] md:left-8 lg:left-0"></div>
           <button
             onClick={handleAddDonation}
-            className="bg-blue-600 px-4 lg:px-6 py-2 lg:py-4 rounded-lg hover:bg-blue-400 font-semibold lg:text-xl text-white absolute bottom-5 md:bottom-8 lg:bottom-14 left-10 md:left-14 lg:left-20"
+            className="px-4 lg:px-6 py-2 lg:py-4 rounded-lg hover:opacity-60 font-semibold lg:text-xl text-white absolute bottom-5 md:bottom-8 lg:bottom-14 left-10 md:left-14 lg:left-20" style = {{background:text_color}}
           >
             Donate ${price}
           </button>
