@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
+import ShowChart from "../../components/PieChart/ShowChart";
 
 const Statistics = () => {
     const [donations, setDonations] = useState(0);
@@ -30,14 +31,12 @@ const Statistics = () => {
       }
     }, [totalDonationData]);
 
-    console.log(donations , remainingDonations)
-
     
 
 
     return (
-        <div>
-            <h2>PieChart Dekhbo</h2>
+        <div className="container mx-auto text-center mt-10">
+            <ShowChart donations={donations} remainingDonations={remainingDonations}></ShowChart>
         </div>
     );
 };
