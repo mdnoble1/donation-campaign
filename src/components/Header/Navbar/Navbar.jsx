@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { BsViewList } from "react-icons/bs";
-import Logo from "./Logo/Logo";
+import logo from "../../../assets/Logo.png";
 
 const Navbar = () => {
   return (
@@ -63,7 +63,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div>
-          <Logo></Logo>
+          <img className="w-32 md:w-40 lg:w-52" src={logo} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="flex gap-12 font-bold text-xl">
