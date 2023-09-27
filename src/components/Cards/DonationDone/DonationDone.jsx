@@ -11,10 +11,6 @@ const DonationDone = ({ donatedItem }) => {
     price,
   } = donatedItem;
 
-  console.log(category_bg,
-    card_bg,
-    text_color)
-
   return (
     <div className="flex justify-center">
         <div className="flex md:gap-6 lg:gap-6 rounded-xl drop-shadow-xl w-11/12 lg:w-full" style = {{background:card_bg}}>
